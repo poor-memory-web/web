@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+.theme .theme__valentine, .theme .theme__aqua, .theme .theme__cyberpunk, .theme .theme__caramellatte, .language .eng, .language .fa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.language .eng, .language .fa {
+  height: 100%;
+  width: 50%;
+  border: 1px solid black;
+}
+
+.theme .theme__valentine, .theme .theme__aqua, .theme .theme__cyberpunk, .theme .theme__caramellatte {
+  height: 100%;
+  width: 25%;
+  border: 1px solid black;
+}
+
+.language {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  background-color: chartreuse;
+  font-size: 2rem;
+}
+.theme {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  font-size: 1.5rem;
+  margin: 2rem 0px;
+}
+.theme .theme__caramellatte {
+  background-color: chocolate;
+}
+.theme .theme__cyberpunk {
+  background-color: gold;
+}
+.theme .theme__aqua {
+  background-color: aqua;
+}
+.theme .theme__valentine {
+  background-color: pink;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.d-none {
+  display: none;
+}/*# sourceMappingURL=style.css.map */

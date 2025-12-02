@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+%d-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%c-language {
+    height: 100%;
+    width: 50%;
+    border: 1px solid black;
+}
+
+%c-theme {
+    height: 100%;
+    width: 25%;
+    border: 1px solid black;
+}
+
+
+.language {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    background-color: chartreuse;
+    font-size: 2rem;
+
+    .fa {
+        @extend %d-flex-center;
+        @extend %c-language
+    }
+
+    .eng {
+        @extend %d-flex-center;
+        @extend %c-language
+    }
+}
+
+.themes {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    font-size: 1.5rem;
+    margin: 2rem 0px;
+
+    .theme__caramellatte {
+        @extend %d-flex-center;
+        @extend %c-theme;
+        background-color: chocolate
+    }
+
+    .theme__cyberpunk {
+        @extend %d-flex-center;
+        @extend %c-theme;
+        background-color: gold
+    }
+
+    .theme__aqua {
+        @extend %d-flex-center;
+        @extend %c-theme;
+        background-color: aqua
+    }
+
+    .theme__valentine {
+        @extend %d-flex-center;
+        @extend %c-theme;
+        background-color: pink;
+    }
+}
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.d-none{
+    display: none;
+}
